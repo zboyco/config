@@ -1,0 +1,66 @@
+import = ["/Users/shannon/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+# 自动刷新
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13
+
+[font.bold]
+family = "Cascadia Mono PL"
+style = "Bold"
+
+[font.bold_italic]
+family = "Cascadia Mono PL"
+style = "Bold Italic"
+
+[font.italic]
+family = "Cascadia Mono PL"
+style = "Italic"
+
+[font.normal]
+family = "Cascadia Mono PL"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Command"
+
+[scrolling]
+# 自动滚动至最新行
+#auto_scroll = true
+# 历史保留行数
+history = 5000
+# 每次滚动行数
+#multiplier: 1
+
+[shell]
+args = ["-l", "-c", "zellij attach --create \"main\""]
+program = "/opt/homebrew/Cellar/fish/3.7.1/bin/fish"
+
+[window]
+# 边框和按键 Full/None/Transparent/Buttonless
+decorations = "Buttonless"
+# 窗口透明度 (0 全透明, 1 不透明)
+opacity = 0.85
+# option按键当做alt
+option_as_alt = "Both"
+# 窗口模式  Windowed/Maximized/Fullscreen/SimpieFullscreen
+startup_mode = "Windowed"
+
+[window.padding]
+x = 0
+y = 0
